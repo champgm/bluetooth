@@ -4,6 +4,8 @@
   "description": "messing around with nodejs bluetooth stuff",
   "main": "index.js",
   "scripts": {
+    "scan":"npm run build && node tsc-out/scan.js",
+    "build":"tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,13 +19,13 @@
   },
   "homepage": "https://github.com/champgm/bluetooth#readme",
   "dependencies": {
-    "noble": "^1.9.1"
+    "noble-mac": "https://github.com/Timeular/noble-mac.git"
   },
   "devDependencies": {
     "@types/noble": "0.0.39",
     "@types/node": "^12.7.2",
     "ts-node": "^8.3.0",
-    "tslint": "^5.18.0",
+    "tslint": "^5.19.0",
     "typescript": "^3.5.3"
   }
 }
